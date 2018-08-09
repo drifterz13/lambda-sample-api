@@ -1,0 +1,26 @@
+{
+  "name": "sls-todo-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "db.js",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "mongoose": "^5.2.7"
+  },
+  "devDependencies": {
+    "jest": "^23.4.2",
+    "serverless-offline": "^3.25.7",
+    "sinon": "^6.1.4",
+    "sinon-mongoose": "^2.2.1"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
