@@ -24,5 +24,21 @@ functions:
           method: get
           cors: true
 
+  updateTweet:
+    handler: handler.updateTweet
+    events:
+      - http:
+          path: tweet/{id}
+          method: put
+          cors: true
+
+  deleteTweet:
+    handler: handler.deleteTweet
+    events:
+      - http:
+          path: tweet/{id}
+          method: delete
+          cors: true
+
 plugins:
   - serverless-offline
