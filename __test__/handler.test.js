@@ -2,7 +2,6 @@ const mongoose = require('mongoose')
 const sinon = require('sinon')
 require('sinon-mongoose')
 
-const handler = require('../handler')
 const Tweet = require('../models/Tweet')
 
 describe('Get all tweets', () => {

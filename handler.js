@@ -32,6 +32,8 @@ module.exports.getTweets = (event, context, callback) => {
 
   connectToDatabase().then(() => {
     Tweet.find()
+      .sort({ createdAt: -1 })
+      .select('_id text createdAt')
       .then(tweets =>
         callback(null, {
           statusCode: 200,
